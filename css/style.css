@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px dashed black; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:  hsl(225, 100%, 98%);
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main{
+    display: grid;
+    grid-template-rows: 31.3% 1fr;
+    width: 95%;
+    max-width: 24.53em;
+    height: 35.8em;
+    
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+
+main > .card-head > img{
+    width: 100%;
+}
+
+main > .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.68rem;
+}
+
+.card-body > h1, .card-body > p{
+    text-align: center;
+}
+
+.card-body > h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+
+.card-body > p{
+    color: hsl(224, 23%, 55%);
+    padding: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.plan-Anual-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 0.7rem;
+    padding: 1rem;
+}
+
+.plan-Anual-container > div{
+    display: flex;
+    gap: 1.4rem;
+}
+
+.plan-Anual-container > div h4{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+.plan-Anual-container > div p{
+    color: hsl(224, 23%, 55%);
+    
+}
+
+.plan-Anual-container > a{
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.plan-Anual-container > a:active{
+    color: hsl(245, 83%, 68%);
+}
+
+.card-body > .btn{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.8rem 0;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0px 6px 10px 1px hsla(224, 23%, 55%, 0.847);
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.btn:active{
+    background-color: hsl(245, 83%, 68%);
+}
+
+.card-body > .btn-cancel{
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.btn-cancel:active{
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 900px) {
+    body{
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+}
