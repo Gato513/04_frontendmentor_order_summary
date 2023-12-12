@@ -11,7 +11,7 @@ body{
     height: 100vh;
     font-size: 16px;
     font-family: 'Red Hat Display', sans-serif;
-    background-color:  hsl(225, 100%, 98%);
+    background-color:  hsl(225, 100%, 94%);
     background-image: url(../images/pattern-background-desktop.svg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -21,9 +21,8 @@ main{
     display: grid;
     grid-template-rows: 31.3% 1fr;
     width: 95%;
-    max-width: 24.53em;
-    height: 35.8em;
-    
+    max-width: 25.53em;
+    height: 36.8em;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
     overflow: hidden;
@@ -70,9 +69,10 @@ main > .card-body{
     gap: 1.4rem;
 }
 
-.plan-Anual-container > div h4{
+.plan-Anual-container > div h2{
     color: hsl(223, 47%, 23%);
     font-weight: 900;
+    font-size: 1rem;
 }
 
 .plan-Anual-container > div p{
